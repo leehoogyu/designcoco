@@ -10,6 +10,7 @@ body {color: #666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 #header .membership { float: right;  }
 #header .membership a { 
     padding: 8px 20px; border-left: 1px solid #ccc; font-size: 12px; display: inline-block; }
+#header .membership a:hover{color: #dbb075;}
 #header .membership a:last-child {border-right:1px solid #ccc;}
 #header h1 {float: left; width: 30%;}
 #header nav {float: right; width:60%; }
@@ -29,18 +30,37 @@ body {color: #666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 
 
 /* section 구역 */
-.main .slide1 {
-    color: #fff; background: url(../img/main_img3.jpg) no-repeat; background-size: cover; text-align: center; 
+.article1 .slide1 {
+    color: #fff; background: url(../img/main_img1.jpg) no-repeat center;  background-size: cover;
     height: 650px; position: relative; margin-top: 20px; }
-.main .slidetext h2 { font-size: 42px; padding-bottom: 20px; font-weight: bold;}
+.article1 .slide2 {
+    color: #fff; background: url(../img/main_img2.jpg) no-repeat center;  background-size: cover;
+    height: 650px; position: relative; margin-top: 20px; display: none;}
+.article1 .slide3 {
+    color: #fff; background: url(../img/main_img3.jpg) no-repeat center;  background-size: cover;
+    height: 650px; position: relative; margin-top: 20px; display: none;}
+
+.article1 .slidetext {
+    position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%);
+    color: #fff; text-align: center;}
+.article1 .slidetext h2 {
+    font-size: 42px; line-height: 50px; font-weight: 800; color: #fff !important;}
+.article1 .slidetext p {
+    font-size: 16px; line-height: 24px; font-weight: 400; margin: 30px 0;}
+.article1 .slidetext a {
+    font-size: 15px;  font-weight: 400; display: inline-block; padding: 10px 35px;
+    border: 1px solid #fff;}
+.article1 .slidetext a:hover {background: rgba(255, 255, 255, 0.3);}
+
+/* .main .slidetext h2 { font-size: 42px; padding-bottom: 20px; font-weight: bold;}
 .main p {font-size: 16px; padding: 5px;}
 .main p:last-child {padding-top: 30px;}
 .main p > a {font-size: 15px; border: 1px solid #fff; padding: 8px 35px;}
 .main .slidetext {
-    position: absolute; left: 50%; top: 30%; transform: translate(-50%, -30%); }
+    position: absolute; left: 50%; top: 30%; transform: translate(-50%, -30%); } */
 
 
-.article2 {text-align: center;}
+/* .article2 {text-align: center;}
 .article2 h3 {font-size: 36px; font-weight: bold; color: black; margin-top: 70px;}
 .article2 .a2_title > p {font-size: 14px; padding: 20px 0; margin-bottom: 30px;}
 .article2 .a2_pic .pic1, .pic2, .pic3, .pic4 { 
@@ -57,31 +77,71 @@ body {color: #666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
     font-size: 14px; text-align: left; padding: 0 26px 20px ; line-height: 1.4;}
 .article2 .a2_pic .text a { 
     font-size: 11px; padding: 8px 40px; border: 1px #fff solid; text-align: left; display: inline-block;
-    margin-left: -70px;}
+    margin-left: -70px;} */
+
+#section h2 {
+    color: #000; font-size: 36px; line-height: 42px; font-weight: 700;
+    padding: 80px 0 10px; text-align: center;}
+.article2 > p, .article4 > p  { 
+    padding-bottom: 40px; text-align: center;}
+        
+.article2 li {
+    height: 520px;float: left; width: 24%; margin-right: 1.3333%; color: #fff; position: relative;}
+    
+.article2 li:nth-child(1) {
+    background: url(../img/what1.jpg) no-repeat center; background-size: cover;}
+.article2 li:nth-child(2) {
+    background: url(../img/what2.jpg) no-repeat center; background-size: cover;}
+.article2 li:nth-child(3) {
+    background: url(../img/what3.jpg) no-repeat center; background-size: cover;}
+.article2 li:nth-child(4) {margin-right: 0;
+    background: url(../img/what4.jpg) no-repeat center; background-size: cover;}
+    
+.article2 li > div{position: absolute; bottom: 25px; left: 25px; right: 25px;}
+.article2 li > div > h3 {font-size: 24px; line-height: 32px; font-weight: 500;}
+.article2 li > div > p { padding: 20px 0; line-height: 1.5; font-size: 14px;}
+.article2 li > div > a { 
+    display: inline-block; padding: 10px 40px; border: 1px solid rgba(255,255,255,0.5);
+    font-size: 11px; font-weight: 600 !important;}
+.article2 li > div > a:hover {background: rgba(255,255,255,0.3);}
+
 
 
 .article3{
-    background:url(../img/intro_bg.jpg) no-repeat 80% ; background-size: cover; height: 304px; 
-    color: #fff; text-align: center; position: relative; margin-top: 70px;}
+    background:url(../img/intro_bg.jpg) no-repeat center ; background-size: cover; height: 304px; 
+    color: #fff; text-align: center; position: relative; margin-top: 100px;
+    background-attachment: fixed;}
 .article3 .a3_text{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 .article3 .a3_text h3 {font-size: 34px;}
 .article3 .a3_text p {font-size: 14px; margin: 50px 0;}
 .article3 .a3_text a {font-size: 13px; padding: 8px 30px; border: 1px solid #fff;}
+.article3 .a3_text a:hover{background: rgba(255,255,255,0.3);}
 
 
 .article4 .a4_text {text-align: center; }
 .article4 .a4_text h3 {font-size: 36px; color: #000; font-weight: bold; padding: 70px 0 30px;}
 .article4 .a4_text p {font-size: 14px; margin-bottom: 50px;}
 
-.article4 .pic li {float: left; width: 31.5%; margin-left:1.8%; border: 1px solid #ccc; text-align: center;}
-.article4 .pic li  p:nth-of-type(1) {font-size: 17px; padding: 20px; font-weight: bold; color: #000;}
-.article4 .pic li  p:nth-of-type(2) {font-size: 14px; padding: 0 25px 25px; }
+.article4 .pic li {
+    float: left; width: 32%; margin-right:2%; border: 1px solid #ccc; text-align: center;
+    margin-bottom: 20px;}
+.article4 li:nth-child(3n) { margin-right: 0;}
+.article4 .pic li  p:nth-of-type(1) {font-size: 17px; margin: 25px; font-weight: bold; color: #000;}
+.article4 .pic li  p:nth-of-type(2) {font-size: 14px; margin: 25px; }
+.article4 li img:hover { opacity: 0.6;}
+
 
 /* footer 구역 */
 
 .info {background: #333; color: #ddd; padding: 30px 0; text-align: center;}
-.info .contact {padding-bottom: 30px;}
-.info .contact a {padding: 0 10px; font-size: 17px; color: #fff;}
+#footer .sns a {
+    font-size: 14px; display: inline-block; width: 32px; height: 32px; line-height: 32px;
+    background: rgba(255,255,255,0.1); border-radius: 50%; margin: 0 5px;
+    transition: all 0.3s;}
+#footer .sns a:hover {background: rgba(255,255,255,0.3);}
 .info .company span {font-size: 12px; padding: 0px 10px ; }
 .info .copyright {font-size: 12px; padding: 10px 0 30px;}
-.info .sub  a{font-size: 11px; padding: 3px 10px; border: 1px solid #ddd;}
+.info .sub  a{
+    font-size: 11px; padding: 3px 10px; border: 1px solid rgba(255,255,255,0.5);
+    color: #bbb; transition: all 0.4s;}
+#footer .sub a:hover{ background: #999; border: 1px solid #999; color: #fff;}
