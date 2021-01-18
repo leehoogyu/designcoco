@@ -5,28 +5,33 @@
 body {color: #666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
 
      
-#header .outer { 
-     color: #999; background:#f3f3f3; margin-bottom: 20px; }
-#header .membership { float: right;  }
-#header .membership a { 
-    padding: 8px 20px; border-left: 1px solid #ccc; font-size: 12px; display: inline-block; }
-#header .membership a:hover{color: #dbb075;}
-#header .membership a:last-child {border-right:1px solid #ccc;}
-#header h1 {float: left; width: 30%;}
-#header nav {float: right; width:60%; }
-#header nav .depth1 > li {
-    float: left; font-size: 18px; color: #1e1e1e; padding: 15px 30px 10px; position: relative;
-    font-weight: bold;} 
-#header nav .depth1 > li > a {display: block;}
-#header nav .depth1 > li:hover > a {color: #00529b;}
-#header nav .depth1 > li:hover .depth2 {display: block;}
-.depth2 {
-    display: none; position: absolute; top: 100%; left: 0;  width: 100%;
-    color: #fff; background: #555; z-index: 99; text-align: center;}
-.depth2 > li {line-height: 3;}
-.depth2 > li  a{ font-size: 14px;  display: block; border-bottom: 1px solid #a0a0a0}
-.depth2 > li:hover a {color: #dfe9fe; background: #00529b;}
-
+#header .top_menu {
+    background: #f3f3f3; color: #999; font-size: 12px; text-align: right;}
+#header .top_menu a{
+    padding: 7px 20px; display: inline-block; border-right: 1px solid #999;}
+#header .top_menu a:nth-child(1){border-left: 1px solid #999;}
+#header .top_menu a:hover {color: #dbb075}
+#header > .row{ position: relative;}
+/* 블록요소들을 한줄로 정렬하는 방법 : 
+    1. 둘다 float정렬 2. 둘 중에 높이가 낮은 자식을 position:absolute 정렬 */
+#header h1 {
+    /* float: left; */
+    padding: 25px 0;}
+#header #nav { 
+    /* float: right;  */
+    position: absolute; top: 50%; right: 0; transform: translateY(-50%);
+    font-size: 18px; color: #1e1e1e; z-index: 99999;}
+#header #nav .depth1 >li {float: left; position: relative;}
+#header #nav .depth1 >li > a {padding: 10px 50px; display: inline-block;} 
+#header #nav .depth1 >li:hover > a {color: #00529b;}
+#header .depth2 {
+    position: absolute; top: 100%; left: 0; background: #555; font-size: 14px;
+    color: #fff; width: 100%; text-align: center; display: none;}
+#header #nav .depth1 > li:hover .depth2 {display: block;}
+#header .depth2 > li > a {
+    padding: 18px 0; display:block; border-bottom: 1px solid #999; }
+#header .depth2 > li:last-child > a {border-bottom: none;}
+#header .depth2 > li:hover > a  {color: #dfe9fe; background: #00529b;}
 
 
 /* section 구역 */
